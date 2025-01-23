@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
 
 html {
   font-size: 62.5%;
@@ -16,13 +16,13 @@ h2 {
 
 h1 {
   font-size: 7rem;
-    margin: 0 auto 2rem;
-    line-height: 1.5;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(120deg, #5433ff, #21BDFF, #22ff82);
-    width: max-content;
-    padding: 0 3rem;
+  margin: 0 auto 2rem;
+  line-height: 1.5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(120deg, #5433ff, #21bdff, #22ff82);
+  width: max-content;
+  padding: 0 3rem;
 }
 
 h2 {
@@ -47,7 +47,7 @@ ul {
   width: 100%;
   text-align: left;
   color: #fff;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 1.6rem;
   width: max-content;
   margin: 0 auto;
@@ -70,7 +70,7 @@ ul {
   width: max-content;
   margin: 0 auto;
   padding: 0;
-  
+
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
@@ -83,23 +83,22 @@ ul {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 5rem;
-  grid-row-gap: 5rem;
+    grid-row-gap: 5rem;
     transform: scale(1);
   }
 
   @media (min-width: 1040px) {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    
   }
 }
 
 .card--wrap {
   place-self: start;
-  
-  &:hover{
+
+  &:hover {
     .card {
-        transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
     }
   }
 }
@@ -159,7 +158,7 @@ ul {
   display: flex;
   flex-direction: column;
   place-content: center;
-  
+
   .retro {
     width: max-content;
     text-align: left;
@@ -187,117 +186,140 @@ ul {
   height: 5rem;
   border-radius: 100%;
   box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.4);
-  
-  &--gradient {
+}
+
+.hue--gradient {
   height: 5rem;
   width: 100%;
   background: red;
   border-radius: 5rem;
   box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.4);
 }
-  
-  /* -- FIRST ROW: NATURE -- */
-  /* card 1 -> Paradise */
-  &--1 {
-    background-color: #e5c5b4;
-  }
-  &--2 {
-    background-color: #2cb2bf;
-  }
-  &--3 {
-    background-color: #105a75;
-  }
-  &--gradient--1 {
-    background-image: linear-gradient(90deg, #e5c5b4, #2cb2bf, #105a75);
-  }
-  &--gradient--1--back {
-    background-image: linear-gradient(120deg, #e5c5b4, #2cb2bf, #105a75);
-  }
 
-  /* card 2 -> Red Autumn */
-  &--4 {
-    background-color: #d0c4ca;
-  }
-  &--5 {
-    background-color: #9d252f;
-  }
-  &--6 {
-    background-color: #373227;
-  }
-  &--gradient--2 {
-    background-image: linear-gradient(90deg, #d0c4ca, #9d252f, #373227);
-  }
-  &--gradient--2--back {
-    background-image: linear-gradient(120deg, #d0c4ca, #9d252f, #373227);
-  }
-
-  /* card 3 -> Lilac */
-  &--7 {
-    background-color: #6608ae;
-  }
-  &--8 {
-    background-color: #c78ff2;
-  }
-  &--9 {
-    background-color: #fcbe34;
-  }
-  &--gradient--3 {
-    background-image: linear-gradient(90deg, #6608ae, #c78ff2, #fcbe34);
-  }
-  &--gradient--3--back {
-    background-image: linear-gradient(120deg, #6608ae, #c78ff2, #fcbe34);
-  }
-
-  /* -- SECOND ROW: URBAN -- */
-  /* card 4 -> Brick street */
-  &--10 {
-    background-color: #913534;
-  }
-  &--11 {
-    background-color: #4e6377;
-  }
-  &--12 {
-    background-color: #9bc6fa;
-  }
-  &--gradient--4 {
-    background-image: linear-gradient(90deg, #913534, #4e6377, #9bc6fa);
-  }
-  &--gradient--4--back {
-    background-image: linear-gradient(120deg, #913534, #4e6377, #9bc6fa);
-  }
-
-  /* card 5 -> Subway */
-  &--13 {
-    background-color: #cbcac8;
-  }
-  &--14 {
-    background-color: #eea200;
-  }
-  &--15 {
-    background-color: #3a3a3a;
-  }
-  &--gradient--5 {
-    background-image: linear-gradient(90deg, #cbcac8, #eea200, #3a3a3a);
-  }
-  &--gradient--5--back {
-    background-image: linear-gradient(120deg, #cbcac8, #eea200, #3a3a3a);
-  }
-
-  /* card 6 -> Graffiti */
-  &--16 {
-    background-color: #2ad0ca;
-  }
-  &--17 {
-    background-color: #fc4d9d;
-  }
-  &--18 {
-    background-color: #fcce37;
-  }
-  &--gradient--6 {
-    background-image: linear-gradient(90deg, #2ad0ca, #fc4d9d, #fcce37);
-  }
-  &--gradient--6--back {
-    background-image: linear-gradient(120deg, #2ad0ca, #fc4d9d, #fcce37);
-  }
+/* -- FIRST ROW: NATURE -- */
+/* card 1 -> Paradise */
+.hue--1 {
+  background-color: #e5c5b4;
 }
 
+.hue--2 {
+  background-color: #2cb2bf;
+}
+
+.hue--3 {
+  background-color: #105a75;
+}
+
+.hue--gradient--1 {
+  background-image: linear-gradient(90deg, #e5c5b4, #2cb2bf, #105a75);
+}
+
+.hue--gradient--1--back {
+  background-image: linear-gradient(120deg, #e5c5b4, #2cb2bf, #105a75);
+}
+
+/* card 2 -> Red Autumn */
+.hue--4 {
+  background-color: #d0c4ca;
+}
+
+.hue--5 {
+  background-color: #9d252f;
+}
+
+.hue--6 {
+  background-color: #373227;
+}
+
+.hue--gradient--2 {
+  background-image: linear-gradient(90deg, #d0c4ca, #9d252f, #373227);
+}
+
+.hue--gradient--2--back {
+  background-image: linear-gradient(120deg, #d0c4ca, #9d252f, #373227);
+}
+
+/* card 3 -> Lilac */
+.hue--7 {
+  background-color: #6608ae;
+}
+
+.hue--8 {
+  background-color: #c78ff2;
+}
+
+.hue--9 {
+  background-color: #fcbe34;
+}
+
+.hue--gradient--3 {
+  background-image: linear-gradient(90deg, #6608ae, #c78ff2, #fcbe34);
+}
+
+.hue--gradient--3--back {
+  background-image: linear-gradient(120deg, #6608ae, #c78ff2, #fcbe34);
+}
+
+/* -- SECOND ROW: URBAN -- */
+/* card 4 -> Brick street */
+.hue--10 {
+  background-color: #913534;
+}
+
+.hue--11 {
+  background-color: #4e6377;
+}
+
+.hue--12 {
+  background-color: #9bc6fa;
+}
+
+.hue--gradient--4 {
+  background-image: linear-gradient(90deg, #913534, #4e6377, #9bc6fa);
+}
+
+.hue--gradient--4--back {
+  background-image: linear-gradient(120deg, #913534, #4e6377, #9bc6fa);
+}
+
+/* card 5 -> Subway */
+.hue--13 {
+  background-color: #cbcac8;
+}
+
+.hue--14 {
+  background-color: #eea200;
+}
+
+.hue--15 {
+  background-color: #3a3a3a;
+}
+
+.hue--gradient--5 {
+  background-image: linear-gradient(90deg, #cbcac8, #eea200, #3a3a3a);
+}
+
+.hue--gradient--5--back {
+  background-image: linear-gradient(120deg, #cbcac8, #eea200, #3a3a3a);
+}
+
+/* card 6 -> Graffiti */
+.hue--16 {
+  background-color: #2ad0ca;
+}
+
+.hue--17 {
+  background-color: #fc4d9d;
+}
+
+.hue--18 {
+  background-color: #fcce37;
+}
+
+.hue--gradient--6 {
+  background-image: linear-gradient(90deg, #2ad0ca, #fc4d9d, #fcce37);
+}
+
+.hue--gradient--6--back {
+  background-image: linear-gradient(120deg, #2ad0ca, #fc4d9d, #fcce37);
+}
